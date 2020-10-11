@@ -1,6 +1,3 @@
-# This solution shows the tracing of the function calls and also tells you
-# how many moves were performed to solve the puzzle given the number of disks
-
 A = []
 B = []
 C = []
@@ -34,7 +31,7 @@ def move(n, start, end, bridge, indent_count):
         move(n - 1, start, bridge, end, indent_count)
 
 
-        print(("    " * indent_count) + "Moving to " + str(end) +
+        print(("    " * indent_count) + "Moving disk", n, "to " + str(end) +
               " from " + str(start))
 
         # Move disk #n to end from start
@@ -55,8 +52,6 @@ def move(n, start, end, bridge, indent_count):
     print(("    " * indent_count) + "EXIT", n)
     indent_count -= 1
         
-
-
 
 print("Calling move(" + str(n) + ", " + str(A) + ", " +
               str(C) + ", " + str(B))
