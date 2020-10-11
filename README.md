@@ -1,2 +1,2 @@
 # TowerOfHanoi
-Python program that simulates the Tower of Hanoi game
+Python program that traces the recursive solution for the Tower of Hanoi puzzle
